@@ -1,4 +1,4 @@
-let result = document.querySelector('#result');
+const result = document.getElementById('result');
 
 // Завдання №1
 let name;
@@ -6,4 +6,7 @@ name = "Васьок";
 admin = name;
 console.log(admin);
 
-result.innerHTML = admin;
+if (admin) {
+    result.innerHTML = admin;
+}
+

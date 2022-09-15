@@ -1,4 +1,4 @@
-let result = document.querySelector("#result");
+const result = document.querySelector("#result");
 let arr = [];
 
 for (let i = 2; i <= 10; i++) {
@@ -8,3 +8,4 @@ for (let i = 2; i <= 10; i++) {
     }    
 }
 result.innerHTML = arr;
+console.log(arr);

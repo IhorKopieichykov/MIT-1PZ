@@ -1,6 +1,12 @@
-let result = document.querySelector('#result');
+const result = document.querySelector('#result');
 
 // Завдання №3
-let userName = prompt("Введіть ім'я");
+const userName = prompt("Введіть ім'я");
 
-result.innerHTML = userName;
+
+if (userName) {
+    result.innerHTML = userName;
+    console.log(userName);
+} else {
+    result.innerHTML = "Ви не ввели ім'я!";
+}

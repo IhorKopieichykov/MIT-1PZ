@@ -1,4 +1,4 @@
-let result = document.querySelector('#result');
+const result = document.querySelector('#result');
 let answer = "alert у такому випадку НЕ видається.";
 
 // Завдання №4
@@ -7,4 +7,5 @@ if ("0") {
     answer = "alert у такому випадку видається."
 }
 
+console.log(answer);
 result.innerHTML = answer;

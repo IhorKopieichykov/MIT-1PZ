@@ -1,6 +1,6 @@
-let result = document.querySelector('#result');
+const result = document.querySelector('#result');
 
-let browser = prompt('Який у вас браузер?', 'Chrome');
+const browser = prompt('Який у вас браузер?', 'Chrome');
 
 // switch (browser) {
 //     case 'IE':

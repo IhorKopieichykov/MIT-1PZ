@@ -1,4 +1,4 @@
-let result = document.querySelector('#result');
+const result = document.querySelector('#result');
 let arr = [];
 
 function min(a, b) {
@@ -18,4 +18,5 @@ console.log(min(3, -1));
 console.log(min(1, 1));
 
 result.innerHTML = arr;
+console.log(arr);
 

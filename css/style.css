@@ -20,7 +20,7 @@ nav, footer, header, aside {
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   font-size: 100%;
   line-height: 1;
@@ -61,16 +61,14 @@ img {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: url(../img/background.jpg) 0 0/cover no-repeat;
+  background: linear-gradient(0deg, rgb(124, 116, 255) 0%, rgb(249, 255, 102) 100%) 0 0/100% 100% repeat-y;
 }
 
 /* -----------------WRAPPER-------------------  */
 .wrapper {
   overflow: hidden;
   min-width: 100%;
-  min-height: 100%;
   width: 100%;
-  height: 100%;
 }
 
 /* ---------------CONTAINER-------------------- */
@@ -90,6 +88,15 @@ body {
 }
 
 /* -------------MAIN--------- */
+.main {
+  flex: 1 0 auto;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -135,6 +142,9 @@ body {
   left: 10px;
 }
 
+.nav__link-back {
+  font-weight: 600;
+}
 .nav__link-back::before {
   content: "⬇";
   color: black;
@@ -164,10 +174,19 @@ body {
   opacity: 1;
 }
 
+a strong:hover {
+  cursor: pointer;
+}
+
 /* ---------------TASKS-------------------- */
 .main__task {
   min-height: 300px;
   padding: 15px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
 }
 
 .task__title {

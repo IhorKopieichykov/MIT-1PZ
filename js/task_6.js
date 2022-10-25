@@ -1,6 +1,6 @@
-const age = prompt("Вкажіть ваш вік: ");
+let age = prompt("Вкажіть ваш вік: ");
 age = Number(age);
-const result = document.querySelector('#result');
+const result = document.getElementById('result');
 let answer = '';
 
 if (age) {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/icon.png">
+    <title>Завдання №1 - ПЗ №1 МИТ (частина 2)</title>
+</head>
+<body>    
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Мобільні інформаційні технології</h1>
+                <h2 class="header__class">Практичне заняття №1</h2>
+                <div class="header__student student">
+                    <h3 class="student__name">Копєйчиков Ігор</h3>
+                    <h3 class="student__group">ІТУ-20-1</h3>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__task task">
+                    <h2 class="task__title">Завдання №1</h2>
+                    <div class="task__text"> 
+                        1.	Переписати підсумовування аргументів. <br>
+                        Нехай є функція sum, яка підсумовує всі елементи масиву: <br>
+                        function sum (arr) { <br>
+                        return arr.reduce (function (a, b) { <br>
+                            return a + b; <br>
+                        });	} <br>
+                        alert (sum ([1, 2, 3])); // 6 (= 1 + 2 + 3) <br>
+                        Необхідно	створити	аналогічну	функцію	sumArgs(),	яка	буде підсумовувати всі свої аргументи: <br>
+                        function sumArgs () { <br>
+                        / * Ваш код * / <br>
+                        } <br>
+                        alert (sumArgs (1, 2, 3)); // 6, аргументи подані через кому, без масиву <br>
+                        Для	вирішення	слідзастосувати	метод	reduce	до	arguments, використовуючи call, apply або позичання методу. <br>
+                        <em>Примітка.</em> Функція sum не знадобиться, вона наведена як приклад використання reduce.
+
+                    </div>
+                    <div class="task__result">
+                        Результат виконання завдання: "<span id="result"></span>"
+                    </div>
+                </div>
+                
+
+                <nav class="main__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../second_part.html" class="nav__link nav__link-back">Back</a></li>                        
+                    </ul>
+                </nav>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+
+            </div>
+        </footer>
+    </div>
+      
+    <script defer src="../js/task_2_1.js"></script>
+</body>
+</html>
